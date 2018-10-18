@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%% Author:	Justin Baum									%%%%
-%%%% Purpose:	Busy Beaver Turing Machine 2 State			%%%%
-%%%% Date: 		18 October 2018 							%%%%
+%%%% Author:    Justin Baum                                 %%%%
+%%%% Purpose:   Busy Beaver Turing Machine                  %%%%
+%%%% Date:      18 October 2018                             %%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 -module(busy_beaver).
