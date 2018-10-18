@@ -15,17 +15,17 @@ run(Tape) ->
     a(Tape).
 
 a(Tape) ->
-    case tape_operations:read_tape(Tape) of
+    case tape:read_tape(Tape) of
         0 ->
-            b(tape_operations:tape_right(tape_operations:write_tape(Tape, 1)));
+            b(tape:tape_right(tape:write_tape(Tape, 1)));
         1 ->
-            b(tape_operations:tape_left(tape_operations:write_tape(Tape, 1)))
+            b(tape:tape_left(tape:write_tape(Tape, 1)))
         end.
 
 b(Tape) ->
-    case tape_operations:read_tape(Tape) of
+    case tape:read_tape(Tape) of
         0 ->
-            a(tape_operations:tape_left(tape_operations:write_tape(Tape, 1)));
+            a(tape:tape_left(tape:write_tape(Tape, 1)));
         1 ->
-            tape_operations:halt_over(tape_operations:tape_right(tape_operations:write_tape(Tape,1)))
+            tape:halt_over(tape:tape_right(tape:write_tape(Tape,1)))
         end.

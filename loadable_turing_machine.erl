@@ -32,7 +32,7 @@ read_tape(Q, Tape, CurrentState) ->
                     tape:flatten_tape(tape:write_tape(Tape, 0));
                 1 ->
                     tape:flatten_tape(tape:write_tape(Tape, 1));
-                _ ->2
+                _ ->
                     tape:flatten_tape(Tape)
             end;
         r ->
