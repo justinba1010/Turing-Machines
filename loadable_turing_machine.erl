@@ -26,6 +26,7 @@ read_tape(Q, Tape, CurrentState) ->
             end,
     case Direction of
         h ->
+            % Two different ways this can be programmed, either you can print to the tape or not before halting
             case Write of
                 0 ->
                     tape:flatten_tape(tape:write_tape(Tape, 0));

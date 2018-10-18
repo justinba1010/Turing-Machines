@@ -34,4 +34,4 @@ tape_right({Left, [Next | Right]}) ->
     {[Next] ++ Left, Right}.
 
 flatten_tape({Left, Right}) ->
-    io:format("~p\n",[lists:reverse(Left) ++ Right]).
+    io:format("... 0 0 ~p\n 0 0 ...",[lists:reverse(Left) ++ Right]).
