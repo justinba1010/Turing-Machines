@@ -1,10 +1,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% Author:    Justin Baum                                 %%%%
-%%%% Purpose:   Universal Turing Machine                    %%%%
+%%%% Purpose:   Loadable 2 Symbol Turing Machines           %%%%
 %%%% Date:      18 October 2018                             %%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
--module(loadable_turing_machine).
+-module(turing_two_symbol).
 
 -export([run/3]).
 
