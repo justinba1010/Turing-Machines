@@ -2,15 +2,15 @@
 
 ## Multi Symbol
 
-So this uses a key find tuple list for each state. When giving the conditions for a turing machine, Q, it should go as a list of `{state, conditions}`, where the conditions are also a list of tuples where each of the first elements is the read from the current spot in tape, then direction, then a write symbol, and the next state. Conditions are a list of tuples that look like this, `{read symbol, direction, write symbol, next state}`.
+Program uses a key to find list of tuples for each state. Conditions for a turing machine Q should go as a list of `{state, conditions}`. Conditions are tuples containing read symbol from current spot, the direction, write symbol to current spot and the next state. Following is an example of condition as a tuple, `{read symbol, direction, write symbol, next state}`.
 
 ### Note
 
-This program writes the symbol in the current position, then moves the tape. Very important to remember the order.
+This program writes the symbol in the current position, then moves the tape. Order is important.
 
 ## Infinite Tape
 
-Because an infinite tape is not easily representable, the tape is continually added to as needed, otherwise it can be assumed as an infinite number of zeroes before and after this tape.
+Tape is continually added when needed because an infinite tape is not easily representable. An infinite tape will assume an infinite number of zeros before and after the tape. 
 
 ### Busy Beaver through turing_two_symbol
 
